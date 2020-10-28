@@ -1,0 +1,32 @@
+{
+  "name": "serverless-order-system",
+  "version": "0.0.1",
+  "description": "Serverless order system by websocket",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "node ./scripts/bootstrap.js",
+    "dev": "cd website && npm run dev",
+    "deploy": "sls deploy --all",
+    "deploy:vpc": "sls deploy --target=./vpc",
+    "deploy:db": "sls deploy --target=./postgresql",
+    "deploy:ws": "sls deploy --target=./websocket",
+    "deploy:server": "sls deploy --target=./server",
+    "deploy:website": "sls deploy --target=./website"
+  },
+  "keywords": [
+    "order-system",
+    "order-system",
+    "websocket",
+    "serverless"
+  ],
+  "author": "yugasun",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yugasun/serverless-order-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yugasun/serverless-order-system/issues"
+  },
+  "homepage": "https://github.com/yugasun/serverless-order-system#readme"
+}

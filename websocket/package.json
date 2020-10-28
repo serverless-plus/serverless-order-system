@@ -1,0 +1,17 @@
+{
+  "name": "order-system-websocket",
+  "version": "1.0.0",
+  "description": "Serverless Order System Websocket Service",
+  "main": "sls.js",
+  "scripts": {},
+  "keywords": [
+    "order-system",
+    "server",
+    "serverless"
+  ],
+  "author": "yugasun",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.4.2"
+  }
+}

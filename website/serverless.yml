@@ -1,0 +1,18 @@
+app: order-system
+stage: dev
+
+component: website
+name: order-system-website
+
+inputs:
+  region: ${env:REGION}
+  bucketName: ${name}
+  src:
+    src: ./
+    exclude:
+      - env.js
+      - 'node_modules/**'
+  protocol: https
+  env:
+    apiUrl: ${output:${stage}:${app}:${app}-server.apigw.url}
+    wsUrl: ${output:${stage}:${app}:${app}-ws.apigw.url}

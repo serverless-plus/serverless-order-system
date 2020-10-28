@@ -1,0 +1,11 @@
+app: order-system
+stage: dev
+
+component: vpc
+name: order-system-vpc
+
+inputs:
+  region: ${env:REGION}
+  zone: ${env:ZONE}
+  vpcName: serverless
+  subnetName: serverless

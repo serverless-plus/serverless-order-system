@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商家端</title>
+  </head>
+  <body>
+    <h1>商家端</h1>
+
+    <label>
+      店铺名:
+      <select id="shopName">
+        <option value="shop1">shop1</option>
+        <option value="shop2">shop2</option>
+      </select>
+    </label>
+    <br />
+    <br />
+    <button onclick="WebSocketTest()">开始营业</button>
+
+    <div id="message-wrapper"></div>
+  </body>
+  <script src="./env.js"></script>
+  <script src="./js/shop.js"></script>
+</html>

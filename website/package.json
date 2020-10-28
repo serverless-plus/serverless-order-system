@@ -1,0 +1,15 @@
+{
+  "name": "order-system-website",
+  "version": "1.0.0",
+  "description": "Serverless Order System Website",
+  "main": "env.js",
+  "scripts": {
+    "dev": "http-server -p 8080"
+  },
+  "author": "yugasun",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

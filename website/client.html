@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>客户端</title>
+  </head>
+  <body>
+    <h1>客户端</h1>
+    <h3>个人信息</h3>
+    <form>
+      <div>
+        <label for="user">
+          姓名：
+          <input id="user" type="text" placeholder="姓名" value="test" />
+        </label>
+      </div>
+      <div>
+        <label for="addr">
+          地址： <input id="addr" type="text" placeholder="地址" value="广东省""
+          />
+        </label>
+      </div>
+      <div>
+        <label for="telephone">
+          电话：
+          <input
+            id="telephone"
+            type="text"
+            placeholder="电话"
+            value="123837638"
+          />
+        </label>
+      </div>
+    </form>
+    <h3>你想点什么菜？</h3>
+    <div id="shop">加载中...</div>
+    <br />
+    <br />
+    <button onclick="order()">下单</button>
+  </body>
+  <script src="./env.js"></script>
+  <script src="./js/client.js"></script>
+</html>

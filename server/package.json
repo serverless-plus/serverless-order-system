@@ -1,0 +1,22 @@
+{
+  "name": "order-system-server",
+  "version": "1.0.0",
+  "description": "Serverless Order System Server",
+  "main": "sls.js",
+  "scripts": {
+    "dev": "node sls.js"
+  },
+  "keywords": [
+    "order-system",
+    "server",
+    "serverless"
+  ],
+  "author": "yugasun",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.4.2"
+  }
+}

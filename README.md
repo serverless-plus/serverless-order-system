@@ -1,5 +1,7 @@
 # Serverless Order System
 
+[在线体验](https://order.yuga.chat)
+
 基于 Serverless 的实时点餐系统.
 
 ## 项目简介
@@ -83,6 +85,10 @@ $ npm run dev
 在浏览器中访问 `http://127.0.0.1:8080` 如下：
 
 ![Website](https://static.cdn.yugasun.com/order-system-website.png)
+
+## 注意 ⚠️⚠️⚠️
+
+前端静态托管的配置 `website/serverless.yml` 中，配置了 `hosts` 为 CDN 加速域名相关配置，如果不需要 CDN 可以直接将其中的 `hosts` 配置删除。
 
 ## License
 

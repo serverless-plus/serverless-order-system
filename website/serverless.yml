@@ -16,3 +16,20 @@ inputs:
   env:
     apiUrl: ${output:${stage}:${app}:${app}-server.apigw.url}
     wsUrl: ${output:${stage}:${app}:${app}-ws.apigw.url}
+  hosts:
+    - host: ${env:CDN_DOMAIN}
+      async: true
+      area: mainland
+      autoRefresh: true
+      # 在第一次部署成功后 CDN 已经配置好了，如果配置不更改
+      # 可以将 onlyRefresh 配置为 true，这样每次部署就只是刷新 CDN 缓存，不需要等待 5 分钟的 CDN 部署
+      onlyRefresh: false
+      https:
+        switch: on
+        http2: on
+        certInfo:
+          certId: ${env:CDN_DOMAIN_CERT_ID}
+      forceRedirect:
+        switch: on
+        redirectType: https
+        redirectStatusCode: 301

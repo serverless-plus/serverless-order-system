@@ -84,7 +84,9 @@ $ npm run dev
 
 在浏览器中访问 `http://127.0.0.1:8080` 如下：
 
-![Website](https://static.cdn.yugasun.com/order-system-website.png)
+<center>
+<img src="./demo/index.png" width="500" alt="Website"/>
+</center>
 
 ## 注意 ⚠️⚠️⚠️
 

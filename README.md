@@ -33,7 +33,7 @@ API GW      - API 网关
 克隆项目:
 
 ```bash
-$ git clone https://github.com/yugasun/serverless-order-system
+$ sls init order-system
 ```
 
 安装项目所以依赖:

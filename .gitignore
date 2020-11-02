@@ -5,4 +5,3 @@ env.js
 
 yarn.lock
 package-lock.json
-serverless.template.yml

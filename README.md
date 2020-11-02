@@ -36,12 +36,6 @@ API GW      - API 网关
 $ sls init order-system
 ```
 
-安装项目所以依赖:
-
-```bash
-$ npm run bootstrap
-```
-
 ## 部署
 
 部署需要先配置腾讯云鉴权信息，复制 `.env.example` 为 `.env`，然后配置正确的腾讯云密钥的 `TENCENT_SECRET_ID` 和 `TENCENT_SECRET_KEY`。
@@ -72,8 +66,7 @@ $ npm run depoy
 window.env = {};
 
 window.env.wsUrl = 'wss://service-xxxx-xxx.bj.apigw.tencentcs.com';
-window.env.apiUrl =
-  'https://service-fcnk2h5b-1251556596.bj.apigw.tencentcs.com/release/';
+window.env.apiUrl = 'https://service-xxx-xxx.bj.apigw.tencentcs.com/release/';
 ```
 
 然后启动前端页面：

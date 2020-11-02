@@ -8,6 +8,6 @@ inputs:
   zone: ${env:ZONE}
   dBInstanceName: ${name}
   vpcConfig:
-    vpcId: ${output:${stage}:${app}:${app}-vpc.vpcId}
-    subnetId: ${output:${stage}:${app}:${app}-vpc.subnetId}
+    vpcId: ${output:${stage}:${app}:order-system-vpc.vpcId}
+    subnetId: ${output:${stage}:${app}:order-system-vpc.subnetId}
   extranetAccess: true

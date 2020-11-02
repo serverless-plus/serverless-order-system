@@ -6,7 +6,8 @@
   "scripts": {
     "bootstrap": "node ./scripts/bootstrap.js",
     "dev": "cd website && npm run dev",
-    "deploy": "sls deploy --all",
+    "deploy": "sls deploy",
+    "remove": "sls remove",
     "deploy:vpc": "sls deploy --target=./vpc",
     "deploy:db": "sls deploy --target=./postgresql",
     "deploy:ws": "sls deploy --target=./websocket",

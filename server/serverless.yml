@@ -12,12 +12,12 @@ inputs:
     timeout: 900
     environment:
       variables:
-        DB_HOST: ${output:${stage}:${app}:${app}-db.public.host}
-        DB_PORT: ${output:${stage}:${app}:${app}-db.public.port}
-        DB_USER: ${output:${stage}:${app}:${app}-db.public.user}
-        DB_PASSWORD: ${output:${stage}:${app}:${app}-db.public.password}
-        DB_NAME: ${output:${stage}:${app}:${app}-db.public.dbname}
-        WS_BACK_URL: ${output:${stage}:${app}:${app}-ws.apigw.wsBackUrl}
+        DB_HOST: ${output:${stage}:${app}:order-system-db.public.host}
+        DB_PORT: ${output:${stage}:${app}:order-system-db.public.port}
+        DB_USER: ${output:${stage}:${app}:order-system-db.public.user}
+        DB_PASSWORD: ${output:${stage}:${app}:order-system-db.public.password}
+        DB_NAME: ${output:${stage}:${app}:order-system-db.public.dbname}
+        WS_BACK_URL: ${output:${stage}:${app}:order-system-ws.apigw.wsBackUrl}
   apigatewayConf:
     environment: release
     protocols:

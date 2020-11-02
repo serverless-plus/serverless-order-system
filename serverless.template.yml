@@ -1,0 +1,20 @@
+name: order-system
+author: Serverless Plus
+org: Serverless Plus
+description: Deploy a order system application
+description-i18n:
+  zh-cn: 快速部署一个基于 Websocket 的实时订单系统应用,  express + postgres + websocket
+keywords: tencent, serverless, express, websocket, postgresql
+repo: https://github.com/serverless-plus/serverless-order-system/tree/master
+readme: https://github.com/serverless-plus/serverless-order-system/tree/master/README.md
+license: MIT
+src:
+  src: ./
+  exclude:
+    - '.git/**'
+    - '**/node_modules'
+    - '**/package-lock.json'
+    - '**/yarn.lock'
+    - '.DS_Store'
+  include:
+    - '.env.example'

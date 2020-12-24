@@ -11,6 +11,7 @@ license: MIT
 src:
   src: ./
   exclude:
+    - '.env'
     - '.git/**'
     - '**/node_modules'
     - '**/package-lock.json'
